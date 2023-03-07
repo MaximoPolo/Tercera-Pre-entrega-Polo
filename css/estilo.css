@@ -1,0 +1,391 @@
+@charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+#autopublicidad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+#autopublicidad img {
+  max-width: 100%;
+}
+
+#autopublicidad h2 {
+  margin-top: 20px;
+}
+
+#autopublicidad p {
+  margin: 20px 0;
+}
+
+#autopublicidad button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#autopublicidad button:hover {
+  background-color: #0062cc;
+}
+
+#autospopulares {
+  padding: 20px;
+}
+
+#autospopulares h2 {
+  margin-top: 0;
+}
+
+#autospopulares ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+#autospopulares li {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#autospopulares li a {
+  color: #333;
+  text-decoration: none;
+}
+
+#autospopulares li a:hover {
+  text-decoration: underline;
+}
+
+#autospopulares img {
+  max-width: 100%;
+}
+
+#autospopulares h3 {
+  margin-top: 10px;
+}
+
+#autospopulares {
+  margin: 5px 0;
+}
+
+/* Estilo para versiones móviles */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 10px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+  nav li {
+    margin: 5px 0;
+  }
+  #autopublicidad p {
+    margin: 10px 0;
+  }
+  #autospopulares ul {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+  #autospopulares li {
+    padding: 10px;
+  }
+  #autospopulares h3 {
+    font-size: 18px;
+  }
+}
+/* Estilo para version de escritorio */
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+  }
+  header h1 {
+    font-size: 36px;
+  }
+  nav ul {
+    flex-direction: row;
+  }
+  #autopublicidad {
+    flex-direction: row;
+    align-items: center;
+  }
+  #autopublicidad img {
+    width: 50%;
+    margin-right: 50px;
+  }
+  #autopublicidad h2 {
+    margin-top: 0;
+  }
+  #autopublicidad ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+  #autopublicidad li {
+    padding: 20px;
+  }
+  #autopublicidad h3 {
+    font-size: 24px;
+  }
+}
+/* Estilo general */
+main {
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.listacatalogo {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.autocatalogo {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.autocatalogo img {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .listacatalogo {
+    flex-direction: column;
+  }
+}
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 2rem;
+}
+main section img {
+  max-width: 100%;
+  height: auto;
+}
+main section p {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+main section address {
+  margin-top: 1rem;
+  font-style: normal;
+}
+main section iframe {
+  margin-top: 1rem;
+  width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  main section {
+    margin-top: 1rem;
+  }
+  main section img {
+    margin-top: 1rem;
+  }
+  main section p {
+    font-size: 1rem;
+  }
+  main section address {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  main section iframe {
+    margin-top: 1rem;
+    height: 300px;
+  }
+}
+/* Estilo para info */
+.about {
+  padding: 80px 0;
+}
+.about h2 {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.about .info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.about .info .item {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about .info .item img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.about .info .item h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .info .item p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.about .info .item a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.about .info .item a:hover {
+  text-decoration: underline;
+}
+.about .sponsors h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.about .sponsors .sponsor-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.about .sponsors .sponsor-item img {
+  width: 200px;
+  margin-right: 30px;
+}
+.about .sponsors .sponsor-item .sponsor-info {
+  flex: 1;
+}
+.about .sponsors .sponsor-item .sponsor-info h4 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.about .sponsors .sponsor-item .sponsor-info p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.about .sponsors .sponsor-item .sponsor-info a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+}
+.about .sponsors .sponsor-item .sponsor-info a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para versiones mobile y desktop */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 50px 0;
+  }
+  .about .info .item {
+    width: 100%;
+  }
+  .about .info .item img {
+    width: 80px;
+  }
+  .about .info .item h4 {
+    font-size: 20px;
+  }
+  .about .info .item p {
+    font-size: 16px;
+  }
+  .about .info .item a {
+    font-size: 16px;
+  }
+  .about .sponsors .sponsor-item img {
+    width: 150px;
+    margin-right: 20px;
+  }
+  .about .sponsors .sponsor-item .sponsor-info h4 {
+    font-size: 20px;
+  }
+  .about .sponsors .sponsor-item .sponsor-info p {
+    font-size: 16px;
+  }
+  .about .sponsors .sponsor-item .sponsor-info a {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=estilo.css.map */

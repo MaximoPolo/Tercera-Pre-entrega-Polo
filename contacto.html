@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Concesionaria</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+    <header>
+        <h1>Concesionaria</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="info.html">Sobre nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <p>Por favor, complete el siguiente formulario para contactarnos:</p>
+        <form>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <section>
+            <h3>Nuestra sucursal</h3>
+            <img src="https://via.placeholder.com/500x300.png?text=Imagen+de+la+sucursal" alt="Imagen de la sucursal">
+            <p>Estamos ubicados en la siguiente dirección:</p>
+            <address>
+                Calle Falsa 1234, Ciudad Autónoma de Buenos Aires
+            </address>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.820789394155!2d-58.38544668475984!3d-34.603722280457064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca7d8b1d0b7f%3A0xe6d8fbffba2cb3ac!2sObelisco!5e0!3m2!1sen!2sar!4v1646628477011!5m2!1sen!2sar"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Concesionaria de vehículos</p>
+    </footer>
+</body>
+
+</html>
